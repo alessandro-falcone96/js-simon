@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header{
+  padding-left: 30px;
+  background-color: lightblue;
+}
+h1{
+  font-size: 75px;
+  color: blue;
+  padding: 15px 0px;
+}
+h4{
+  font-size: 25px;
+  color: darkblue;
+  margin: 15px 0px;
+}
+h3{
+  font-size: 50px;
+  color: darkblue;
+  padding: 15px 0px;
+}

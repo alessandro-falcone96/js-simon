@@ -6,6 +6,7 @@ $(document).ready(function() {
   var listPlayerNumbers = [];
   var numeriIndovinati = 0;
   var listaNumeriIndovinati = [];
+  var risultato = "";
 
   // Aggiungo il ciclo che crea numeri random e metto un alert con i numeri creati
   while (listRandomNumbers.length < 5) {
@@ -26,7 +27,7 @@ $(document).ready(function() {
         listaNumeriIndovinati.push(n);
       }
     }
-    
+
     // Vari console.log per debugging
     // console.log("Hai indovinato " + numeriIndovinati + " numeri");
     // console.log("Questi sono i numeri che hai inserito: " + listPlayerNumbers);
@@ -34,8 +35,10 @@ $(document).ready(function() {
     // console.log("Questi sono i numeri che avresti dovuto indovinare: " + listRandomNumbers);
 
     // Alert con i numeri indovinati dall'utente
-    alert("Hai indovinato " + numeriIndovinati + " numeri: " + listaNumeriIndovinati);
+    risultato = "Hai indovinato " + numeriIndovinati + " numeri: " + listaNumeriIndovinati;
 
-  }, 30000);
+    document.getElementById('risultato').innerHTML = risultato;
+
+  }, 2000);
 
 });
